@@ -1,0 +1,1156 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Всё вкусное — кондитерская</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="container row between center">
+      <p>Ремесленная кондитерская • Натуральные ингредиенты</p>
+      <span>«Всё вкусное»</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container row between center">
+      <div class="row gap-12 center">
+        <div class="logo"><img src="/logo/лого.png" alt="Логотип Всё вкусное"></div>
+        <div class="brand">
+          <div class="brand-title">Всё вкусное</div>
+          <div class="brand-sub">кондитерская мастерская</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#catalog">Каталог</a>
+        <a href="#popular">Популярное</a>
+        <a href="#about">О нас</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#catalog">Каталог</a>
+      <a href="#popular">Популярное</a>
+      <a href="#about">О нас</a>
+      <a href="#contacts">Контакты</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container grid-2 gap-24 center-v">
+      <div>
+        <h1>Ручная кондитерская <span>для ваших сладких моментов</span></h1>
+        <p class="lead">Без искусственных добавок и лишней сладости. Небольшие партии, чистый вкус ингредиентов.</p>
+        <div class="row gap-12 wrap mt-24">
+          <a href="#catalog" class="btn primary">Смотреть каталог</a>
+          <a href="#contacts" class="btn outline">Адреса и карта</a>
+        </div>
+      </div>
+      <div>
+        <div class="hero-card">
+          <div class="muted">место для фото-баннера</div>
+          <div class="hero-title">Добавьте ваш аппетитный кадр</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catalog -->
+  <section id="catalog" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-sub">Наш ассортимент</div>
+      <h2>Категории</h2>
+    </div>
+
+    <!-- Быстрые кнопки -->
+    <div class="chips">
+      <a href="#torts" class="chip">Торты</a>
+      <a href="#desserts" class="chip">Десерты</a>
+      <a href="#halva" class="chip">Халва</a>
+      <a href="#urbech" class="chip">Урбечи</a>
+      <a href="#peanut" class="chip">Арахисовая паста</a>
+    </div>
+
+    <!-- Карточки категорий -->
+    <div class="cards-3 mt-24">
+
+      <a class="card" href="#torts">
+        <div class="card-img">
+          <img src="/cotolog/cotolog_img/tort.jpg" alt="Торты" />
+        </div>
+        <div class="card-body">
+          <h3>Торты</h3>
+          <p>Классические, муссовые, фруктовые, шоколадные и праздничные.</p>
+        </div>
+      </a>
+
+      <a class="card" href="#desserts">
+        <div class="card-img">
+          <img src="/cotolog/cotolog_img/desert.jpg" alt="Десерты" />
+        </div>
+        <div class="card-body">
+          <h3>Десерты</h3>
+          <p>Пирожные, эклеры, чизкейки, трайфлы и рулеты.</p>
+        </div>
+      </a>
+
+      <a class="card" href="#halva">
+        <div class="card-img">
+          <img src="/cotolog/cotolog_img/krem.jpg" alt="Халва" />
+        </div>
+        <div class="card-body">
+          <h3>Халва</h3>
+          
+          <p>Арахисовая, кунжутная, фисташковая и с какао.</p>
+        </div>
+      </a>
+
+      <a class="card" href="#urbech">
+        <div class="card-img">
+          <img src="/cotolog/cotolog_img/urbech.jpg" alt="Урбеч" />
+        </div>
+        <div class="card-body">
+          <h3>Урбечи</h3>
+          
+          <p>Из грецкого ореха, кунжута, тыквенных и подсолнечных семечек.</p>
+        </div>
+      </a>
+
+      <a class="card" href="#peanut">
+        <div class="card-img">
+          <img src="/cotolog/cotolog_img/pasta.jpg" alt="Арахисовая паста" />
+        </div>
+        <div class="card-body">
+          <h3>Арахисовая паста</h3>
+          <p>Классическая, хрустящая, с мёдом, шоколадом и фруктозой.</p>
+        </div>
+      </a>
+        </section>
+ <!-- Popular -->
+  <section id="popular" class="section alt">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-sub">Любимые позиции гостей</div>
+        <h2>Популярное</h2>
+      </div>
+
+      <div class="cards-5 mt-24">
+        <div class="card">
+          <div class="card-img square">
+            <img src="/cotolog/mango.jpg" alt="Популярный торт Манго" />
+          </div>
+          <div class="card-body">
+            <div class="tag">Торты</div><h3>Манго</h3>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img square">
+            <img src="/cotolog/desert/izumrud.jpg" alt="Популярный десерт Изумруд" />
+          </div>
+          <div class="card-body">
+            <div class="tag">Десерты</div><h3>Изумруд</h3>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img square">
+            <img src="/cotolog/xalva/podsol.jpg" alt="Популярная халва" />
+          </div>
+          <div class="card-body">
+            <div class="tag">Халва</div><h3>Подсолнечная</h3>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img square">
+            <img src="/cotolog/uebech/urbech.jpg" alt="Популярный урбеч" />
+          </div>
+          <div class="card-body">
+            <div class="tag">Урбеч</div><h3>Классический</h3>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img square">
+            <img src="/cotolog/araxis/xrust.jpg" alt="Популярная арахисовая паста" />
+          </div>
+          <div class="card-body">
+            <div class="tag">Арахисовая паста</div><h3>Хрустящая</h3>
+    </div>
+  </div>
+</section>
+
+  <!-- Category details (anchors) -->
+  <section id="torts" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-sub">Раздел каталога</div>
+      <h2>Торты и фланы</h2>
+    </div>
+
+    <div class="cards-3 mt-24">
+
+      <!-- Торт Дуэт -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/tort/дуэт_сайт.jpg" alt="Торт Дуэт">
+        </div>
+        <div class="card-body">
+          <div class="tag">Торт</div>
+          <h3>Торт «Дуэт»</h3>
+          <p>Сочетание шоколадного и ванильного бисквита с прослойкой крем-брюле из чёрного и белого шоколада с кокосовой стружкой.<br>
+          Масса — 800 г.</p>
+        </div>
+      </div>
+
+      <!-- Торт Медовик сметанный -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/tort/медовик_сметана_сайт.jpg" alt="Торт Медовик сметанный">
+        </div>
+        <div class="card-body">
+          <div class="tag">Торт</div>
+          <h3>Торт «Медовик сметанный»</h3>
+          <p>Медовые коржи с молочно-сливочным кремом.<br>
+          Масса — 400 г.</p>
+        </div>
+      </div>
+
+      <!-- Торт Панчо -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/tort/панчо_сайт.jpg" alt="Торт Панчо">
+        </div>
+        <div class="card-body">
+          <div class="tag">Торт</div>
+          <h3>Торт «Панчо»</h3>
+          <p>Воздушный торт с кусочками ананаса и фундука на основе сметанного крема.<br>
+          Масса — 800 г.</p>
+        </div>
+      </div>
+
+      <!-- Торт Молочная девочка -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/tort/devochka.jpg" alt="Торт Молочная девочка">
+        </div>
+        <div class="card-body">
+          <div class="tag">Торт</div>
+          <h3>Торт «Молочная девочка»</h3>
+          <p>Коржи на сгущённом молоке с нежным сливочным кремом чиз.<br>
+          Масса — 700 г.</p>
+        </div>
+      </div>
+
+      <!-- Торт Чёрный лес -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/tort/черный_лес_сайт.jpg" alt="Торт Чёрный лес">
+        </div>
+        <div class="card-body">
+          <div class="tag">Торт</div>
+          <h3>Торт «Чёрный лес»</h3>
+          <p>Шоколадный бисквит с вишнёвой начинкой и лёгким кремом чиз.<br>
+          Масса — 750 г.</p>
+        </div>
+      </div>
+
+      <!-- Торт Морковный -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/tort/морковный_сайт.jpg" alt="Торт Морковный">
+        </div>
+        <div class="card-body">
+          <div class="tag">Торт</div>
+          <h3>Торт «Морковный»</h3>
+          <p>Пряный морковный бисквит с грецкими орехами и нежным кремом чиз.<br>
+          Масса — 800 г.</p>
+        </div>
+      </div>
+
+      <!-- Флан Ягодный -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/tort/флан_ягод.jpg" alt="Флан Ягодный">
+        </div>
+        <div class="card-body">
+          <div class="tag">Флан</div>
+          <h3>Флан «Ягодный»</h3>
+          <p>Корзинка из песочного теста со сливочным кремом, смородиной и клубникой под желе.<br>
+          Масса — 650 г.</p>
+        </div>
+      </div>
+
+      <!-- Торт Сказка -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/tort/сказка_сайт.jpg" alt="Торт Сказка">
+        </div>
+        <div class="card-body">
+          <div class="tag">Торт</div>
+          <h3>Торт «Сказка»</h3>
+          <p>Ванильный бисквит с кремом «Сливочный со сгущёнкой» и коньячным сиропом.<br>
+          Масса — 550 г.</p>
+        </div>
+      </div>
+
+      <!-- Торт Смородиновый -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/tort/смородиновый_сайт.jpg" alt="Торт Смородиновый">
+        </div>
+        <div class="card-body">
+          <div class="tag">Торт</div>
+          <h3>Торт «Смородиновый»</h3>
+          <p>Медовые коржи с прослойкой из суфле и чёрной смородины.<br>
+          Масса — 700 г.</p>
+        </div>
+      </div>
+
+      <!-- Торт Париж -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/tort/париж_сайт.jpg" alt="Торт Париж">
+        </div>
+        <div class="card-body">
+          <div class="tag">Торт</div>
+          <h3>Торт «Париж»</h3>
+          <p>Кольцо из заварного теста с кремом «Пралине» и свежими ягодами.<br>
+          Масса — 800 г.</p>
+        </div>
+      </div>
+
+      <!-- Торт Сникерс -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/tort/сниккерс_сайт.jpg" alt="Торт Сникерс">
+        </div>
+        <div class="card-body">
+          <div class="tag">Торт</div>
+          <h3>Торт «Сникерс»</h3>
+          <p>Шоколадный торт с карамелью, арахисом и кремом чиз.<br>
+          Масса — 1000 г.</p>
+        </div>
+      </div>
+
+      <!-- Торт Киевский -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/tort/киевский_сайт.jpg" alt="Торт Киевский">
+        </div>
+        <div class="card-body">
+          <div class="tag">Торт</div>
+          <h3>Торт «Киевский»</h3>
+          <p>Коржи-безе с грецким орехом и сливочный крем «Шарлотт».<br>
+          Масса — 750 г.</p>
+        </div>
+      </div>
+
+      <!-- Торт Прага -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/tort/прага_сайт.jpg" alt="Торт Прага">
+        </div>
+        <div class="card-body">
+          <div class="tag">Торт</div>
+          <h3>Торт «Прага»</h3>
+          <p>Шоколадные коржи, крем «Шарлотт», фруктовый джем и шоколадная помадка.<br>
+          Масса — 800 г.</p>
+        </div>
+      </div>
+
+      <!-- Бенто-торт Клубничный -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/tort/бенто_клубника.jpg" alt="Бенто-торт Клубничный">
+        </div>
+        <div class="card-body">
+          <div class="tag">Бенто</div>
+          <h3>Бенто-торт «Клубничный»</h3>
+          <p>Шифоновый бисквит, крем чиз, клубничная начинка.<br>
+          Масса — 350 г.</p>
+        </div>
+      </div>
+
+      <!-- Торт Красный бархат -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/tort/красный_бархат_сайт.jpg" alt="Торт Красный бархат">
+        </div>
+        <div class="card-body">
+          <div class="tag">Торт</div>
+          <h3>Торт «Красный бархат»</h3>
+          <p>Красный шоколадный бисквит с кремом чиз, оформлен лепестками белого шоколада.<br>
+          Масса — 900 г.</p>
+        </div>
+      </div>
+
+      <!-- Смаковница -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/tort/смаковница_сайт.jpg" alt="Смаковница">
+        </div>
+        <div class="card-body">
+          <div class="tag">Торт</div>
+          <h3>Торт «Смаковница»</h3>
+          <p>Бисквит с маком, крем чиз, смородиновая начинка, украшен маком.<br>
+          Масса — 700 г.</p>
+        </div>
+      </div>
+
+      <!-- Торт Шоколадный с вишней -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/tort/вишня_сайт.jpg" alt="Торт Шоколадный с вишней">
+        </div>
+        <div class="card-body">
+          <div class="tag">Торт</div>
+          <h3>Торт «Шоколадный с вишней»</h3>
+          <p>Шоколадный бисквит, крем чиз и сочная вишня.<br>
+          Масса — 750 г.</p>
+        </div>
+      </div>
+
+      <!-- Торт Изумрудный -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/tort/Изумрудный_сайт.jpg" alt="Торт Изумрудный">
+        </div>
+        <div class="card-body">
+          <div class="tag">Торт</div>
+          <h3>Торт «Изумрудный»</h3>
+          <p>Фисташковый бисквит с ягодным муссом и сливочным кремом.<br>
+          Масса — 750 г.</p>
+        </div>
+      </div>
+
+      <!-- Бенто-торт Банан в карамели -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/tort/мини_банан_сайт.jpg" alt="Бенто-торт Банан в карамели">
+        </div>
+        <div class="card-body">
+          <div class="tag">Бенто</div>
+          <h3>Бенто-торт «Банан в карамели»</h3>
+          <p>Шифоновый бисквит, крем чиз, банан и мягкая карамель.<br>
+          Масса — 350 г.</p>
+        </div>
+      </div>
+
+      <!-- Торт Манго-маракуйя -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/tort/mango.jpg" alt="Торт Манго-маракуйя">
+        </div>
+        <div class="card-body">
+          <div class="tag">Торт</div>
+          <h3>Торт «Манго-маракуйя»</h3>
+          <p>Шифоновый белый бисквит с кремом чиз и пюре манго-маракуйи.<br>
+          Масса — 750 г.</p>
+        </div>
+      </div>
+
+      <!-- Торт Наполеон -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/tort/наполеон_сайт.jpg" alt="Торт Наполеон">
+        </div>
+        <div class="card-body">
+          <div class="tag">Торт</div>
+          <h3>Торт «Наполеон»</h3>
+          <p>Классические рубленые коржи с молочно-сливочным кремом «Шарлотт».<br>
+          Масса — 700 г.</p>
+        </div>
+      </div>
+
+      <!-- Торт Клубничный -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/tort/клубничный_сайт.jpg" alt="Торт Клубничный">
+        </div>
+        <div class="card-body">
+          <div class="tag">Торт</div>
+          <h3>Торт «Клубничный»</h3>
+          <p>Ванильный бисквит, крем чиз, джем «Клубничный», зеркальная глазурь.<br>
+          Масса — 850 г.</p>
+        </div>
+      </div>
+
+      <!-- Флан Клубничный -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/tort/флан_клубника.jpg" alt="Флан Клубничный">
+        </div>
+        <div class="card-body">
+          <div class="tag">Флан</div>
+          <h3>Флан «Клубничный»</h3>
+          <p>Корзинка из песочного теста с ванильным кремом и клубникой, покрытая желе.<br>
+          Масса — 600 г.</p>
+        </div>
+      </div>
+
+      <!-- Торт Рафаэлло -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/tort/рафаэлло_сайт.jpg" alt="Торт Рафаэлло">
+        </div>
+        <div class="card-body">
+          <div class="tag">Торт</div>
+          <h3>Торт «Рафаэлло»</h3>
+          <p>Белый бисквит, крем чиз, прослойка из миндаля и хрустящей вафли.<br>
+          Масса — 1000 г.</p>
+        </div>
+      </div>
+
+      <!-- Торт Блаженство -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/tort/Блаженство.jpg" alt="Торт Блаженство">
+        </div>
+        <div class="card-body">
+          <div class="tag">Торт</div>
+          <h3>Торт «Блаженство»</h3>
+          <p>Нежные сливки с йогуртом на воздушном бисквите, украшен киви и персиком.<br>
+          Масса — 800 г.</p>
+        </div>
+      </div>
+
+      <!-- Торт Осенняя тыква -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/tort/осенняя_осень_сайт.jpg" alt="Торт Осенняя тыква">
+        </div>
+        <div class="card-body">
+          <div class="tag">Торт</div>
+          <h3>Торт «Осенняя тыква»</h3>
+          <p>Тыквенный пряный бисквит с кремом чиз и апельсином.<br>
+          Масса — 1000 г.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <section id="desserts" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-sub">Раздел каталога</div>
+      <h2>Десерты</h2>
+    </div>
+
+    <div class="cards-3 mt-24">
+
+      <!-- Пирожное Картошка -->
+      <div class="card">
+        <div class="card-img">
+          <img src="/cotolog/desert/Картошка-целая2.jpg" alt="Пирожное Картошка"loading="lazy"
+>
+        </div>
+        <div class="card-body">
+          <div class="tag">Десерт</div>
+          <h3>Пирожное «Картошка»</h3>
+          <p>Мягкое бисквитное пирожное с нежным вкусом какао и сливок.<br>
+          Масса: 70 г.</p>
+        </div>
+      </div>
+
+      <!-- Десерт Павлова -->
+      <div class="card">
+        <div class="card-img">
+          <img src="/cotolog/desert/павлова.JPG" alt="Десерт Павлова"loading="lazy"
+>
+        </div>
+        <div class="card-body">
+          <div class="tag">Десерт</div>
+          <h3>Десерт «Павлова»</h3>
+          <p>Воздушное безе с кремом «Чиз» и свежими ягодами.<br>
+          Состав: сахарная пудра, белок, сливки, мягкий сыр, клубника.</p>
+        </div>
+      </div>
+
+      <!-- Рулет Изумрудный -->
+      <div class="card">
+        <div class="card-img">
+          <img src="/cotolog/desert/изумрудный.JPG" alt="Рулет Изумрудный"loading="lazy"
+>
+        </div>
+        <div class="card-body">
+          <div class="tag">Десерт</div>
+          <h3>Рулет «Изумрудный»</h3>
+          <p>Рулет со шпинатом, малиновой начинкой и сливочным кремом.<br>
+          Состав: шпинат, мука, малина, сливки, сыр «Чиз».</p>
+        </div>
+      </div>
+
+      <!-- Чизкейк Шоколадный -->
+      <div class="card">
+        <div class="card-img">
+          <img src="/cotolog/desert/чиз_шоколад.jpg" alt="Чизкейк Шоколадный"loading="lazy"
+>
+        </div>
+        <div class="card-body">
+          <div class="tag">Десерт</div>
+          <h3>Чизкейк «Шоколадный»</h3>
+          <p>Песочная основа, сливочный сыр, шоколад и глазурь.<br>
+          Состав: сыр, сливки, шоколад, мука, какао.</p>
+        </div>
+      </div>
+
+      <!-- Мини Медовик -->
+      <div class="card">
+        <div class="card-img">
+          <img src="/cotolog/desert/мини_торт_медовик.jpg" alt="Мини Медовик"loading="lazy"
+>
+        </div>
+        <div class="card-body">
+          <div class="tag">Десерт</div>
+          <h3>Мини-торт «Медовик»</h3>
+          <p>Нежный мини-вариант классического медовика с карамельным вкусом.<br>
+          Масса: 280 г.</p>
+        </div>
+      </div>
+
+      <!-- Кольцо с кремом чиз -->
+      <div class="card">
+        <div class="card-img">
+          <img src="/cotolog/desert/кольцо.JPG" alt="Кольцо с кремом чиз"loading="lazy"
+>
+        </div>
+        <div class="card-body">
+          <div class="tag">Десерт</div>
+          <h3>Кольцо с кремом-чиз</h3>
+          <p>Заварное кольцо с нежным кремом «Чиз» и сахарной пудрой.</p>
+        </div>
+      </div>
+
+      <!-- Десерт Сливочно-шоколадный -->
+      <div class="card">
+        <div class="card-img">
+          <img src="/cotolog/desert/сливочно_шоколадный_касса.jpg" alt="Десерт Сливочно-шоколадный с вишней"loading="lazy"
+>
+        </div>
+        <div class="card-body">
+          <div class="tag">Десерт</div>
+          <h3>Десерт «Сливочно-шоколадный с вишней»</h3>
+          <p>Нежный слой сливочного крема с шоколадом и вишнёвой начинкой.<br>
+          Масса: 180 г.</p>
+        </div>
+      </div>
+
+      <!-- Пирожное Медовик -->
+      <div class="card">
+        <div class="card-img">
+          <img src="/cotolog/desert/медовик.JPG" alt="Пирожное Медовик"loading="lazy"
+>
+        </div>
+        <div class="card-body">
+          <div class="tag">Десерт</div>
+          <h3>Пирожное «Медовик»</h3>
+          <p>Мини-пирожное из медовых коржей с нежным сливочным кремом.</p>
+        </div>
+      </div>
+
+      <!-- Пирожное Корзинка -->
+      <div class="card">
+        <div class="card-img">
+          <img src="/cotolog/desert/малиновая корзинка_сайт.jpg" alt="Пирожное Корзинка"loading="lazy"
+>
+        </div>
+        <div class="card-body">
+          <div class="tag">Десерт</div>
+          <h3>Пирожное «Корзинка»</h3>
+          <p>Рассыпчатая корзинка с заварным кремом и ягодами: вишнёвая, клубничная, малиновая, фруктовая, ягодная.</p>
+        </div>
+      </div>
+
+      <!-- Зефир -->
+      <div class="card">
+        <div class="card-img">
+          <img src="/cotolog/desert/зефир.jpg" alt="Зефир"loading="lazy"
+>
+        </div>
+        <div class="card-body">
+          <div class="tag">Десерт</div>
+          <h3>Зефир микс</h3>
+          <p>Воздушный натуральный зефир ручной работы (малиновый, смородиновый).<br>
+          Масса: 180 г.</p>
+        </div>
+      </div>
+
+      <!-- Эклер -->
+      <div class="card">
+        <div class="card-img">
+          <img src="/cotolog/desert/эклер.jpg" alt="Эклер"loading="lazy"
+>
+        </div>
+        <div class="card-body">
+          <div class="tag">Десерт</div>
+          <h3>Пирожное «Эклер»</h3>
+          <p>Нежное заварное тесто, сливочный крем и шоколадная помадка.<br>
+          Варианты: Сливочный, Шоколадный, Фирменный.</p>
+        </div>
+      </div>
+
+      <!-- Эклер Париж -->
+      <div class="card">
+        <div class="card-img">
+          <img src="/cotolog/desert/париж_эклер.jpg" alt="Эклер Париж"loading="lazy"
+>
+        </div>
+        <div class="card-body">
+          <div class="tag">Десерт</div>
+          <h3>Эклер «Париж»</h3>
+          <p>Эклер с кремом чиз и свежими ягодами.<br>
+          Воздушное заварное тесто с нежным кремом.</p>
+        </div>
+      </div>
+
+      <!-- Трайфл -->
+      <div class="card">
+        <div class="card-img">
+          <img src="/cotolog/desert/трайфл.jpg" alt="Трайфл в ассортиментеloading="loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="tag">Десерт</div>
+          <h3>Трайфл в ассортименте</h3>
+          <p>Нежные десерты в стаканчиках с кремом, бисквитом и ягодами.<br>
+          Варианты: Сникерс, Три шоколада, Киевский, Суфле, Морковный, Малиновый.</p>
+        </div>
+      </div>
+
+      <!-- Безе -->
+      <div class="card">
+        <div class="card-img">
+          <img src="/cotolog/desert/безе.JPG" alt="Безе"loading="lazy"
+>
+        </div>
+        <div class="card-body">
+          <div class="tag">Десерт</div>
+          <h3>Пирожное «Безе»</h3>
+          <p>Воздушное безе с нежным кремом внутри.<br>
+          Масса: 45 г.</p>
+        </div>
+      </div>
+
+      <!-- Тарта с орехами -->
+      <div class="card">
+        <div class="card-img">
+          <img src="/cotolog/desert/фундук_орех_сайт.jpg" alt="Тарта с орехами"loading="lazy"
+>
+        </div>
+        <div class="card-body">
+          <div class="tag">Десерт</div>
+          <h3>Тарта с орехами в карамели</h3>
+          <p>Рассыпчатое тесто, карамель и грецкий орех.<br>
+          Варианты: с грецким орехом и с фундуком.</p>
+        </div>
+      </div>
+
+      <!-- Эклеры в коробке -->
+      <div class="card">
+        <div class="card-img">
+          <img src="/cotolog/desert/эклеры_сайт.jpg" alt="Эклеры в коробке"loading="lazy"
+>
+        </div>
+        <div class="card-body">
+          <div class="tag">Десерт</div>
+          <h3>Эклеры в коробке</h3>
+          <p>Ассорти из четырёх эклеров в подарочной упаковке.<br>
+          Количество: 4 шт.</p>
+        </div>
+      </div>
+
+      <!-- Чизкейк Баскский -->
+      <div class="card">
+        <div class="card-img">
+          <img src="/cotolog/desert/Баскский.jpg" alt="Чизкейк Баскский"loading="lazy"
+>
+        </div>
+        <div class="card-body">
+          <div class="tag">Десерт</div>
+          <h3>Чизкейк «Баскский»</h3>
+          <p>Запечённый чизкейк с карамелизированной корочкой.<br>
+          Масса: 140 г.</p>
+        </div>
+      </div>
+
+      <!-- Чизкейк Классический / Фисташковый -->
+      <div class="card">
+        <div class="card-img">
+          <img src="/cotolog/desert/Чизкейк.jpg" alt="Чизкейк Классический и Фисташковый"loading="lazy"
+>
+        </div>
+        <div class="card-body">
+          <div class="tag">Десерт</div>
+          <h3>Чизкейк Классический / Фисташковый</h3>
+          <p>Мягкий чизкейк на песочной основе.<br>
+          Варианты: классический и фисташковый.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+ <section id="urbech" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-sub">Раздел каталога</div>
+      <h2>Урбечи</h2>
+    </div>
+
+    <div class="cards-3 mt-24">
+
+      <!-- Урбеч из грецкого ореха -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/uebech/greckiy.jpg" alt="Урбеч из грецкого ореха">
+        </div>
+        <div class="card-body">
+          <div class="tag">Урбеч</div>
+          <h3>Урбеч из грецкого ореха</h3>
+          <p>Состав: ядра грецкого ореха тёртые.<br>
+          Пищевая ценность (в 100 г): белки — 13,8 г; жиры — 56,3 г; углеводы — 15,2 г.<br>
+          Энергетическая ценность: 648 ккал / 2713 кДж.<br>
+          Масса — 240 г.</p>
+        </div>
+      </div>
+
+      <!-- Урбеч из семечек тыквы -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/uebech/tykva.jpg" alt="Урбеч из семечек тыквы">
+        </div>
+        <div class="card-body">
+          <div class="tag">Урбеч</div>
+          <h3>Урбеч из семечек тыквы</h3>
+          <p>Состав: семечки тыквы.<br>
+          Пищевая ценность (в 100 г): белки — 20 г; жиры — 46 г; углеводы — 5 г.<br>
+          Энергетическая ценность: 515 ккал / 2156 кДж.<br>
+          Масса — 240 г.</p>
+        </div>
+      </div>
+
+      <!-- Урбеч из семян подсолнечника -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/uebech/podsolnechnik.jpg" alt="Урбеч из семян подсолнечника">
+        </div>
+        <div class="card-body">
+          <div class="tag">Урбеч</div>
+          <h3>Урбеч из семян подсолнечника</h3>
+          <p>Состав: семена подсолнечника.<br>
+          Пищевая ценность (в 100 г): белки — 20 г; жиры — 46 г; углеводы — 5 г.<br>
+          Энергетическая ценность: 515 ккал / 2156 кДж.<br>
+          Масса — 240 г.</p>
+        </div>
+      </div>
+
+      <!-- Урбеч из семян кунжута -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/uebech/kunzhut.jpg" alt="Урбеч из семян кунжута">
+        </div>
+        <div class="card-body">
+          <div class="tag">Урбеч</div>
+          <h3>Урбеч из семян кунжута</h3>
+          <p>Состав: белый кунжут.<br>
+          Пищевая ценность (в 100 г): белки — 24,7 г; жиры — 58 г; углеводы — 12,2 г.<br>
+          Энергетическая ценность: 575 ккал / 2407 кДж.<br>
+          Масса — 240 г.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <section id="peanut" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-sub">Раздел каталога</div>
+      <h2>Арахисовая паста</h2>
+    </div>
+
+    <div class="cards-3 mt-24">
+
+      <!-- Классическая -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/araxis/classic.jpg" alt="Арахисовая паста Классическая">
+        </div>
+        <div class="card-body">
+          <div class="tag">Арахисовая паста</div>
+          <h3>Классическая</h3>
+          <p>Арахисовая паста «Классическая» 240 г.<br>
+          Состав: арахис обжаренный, соль.<br>
+          Пищевая ценность (в 100 г): белки — 24 г; жиры — 50 г; углеводы — 13,4 г.<br>
+          Энергетическая ценность: 599,4 ккал / 2506,3 кДж.</p>
+        </div>
+      </div>
+
+      <!-- С мёдом -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/araxis/honey.jpg" alt="Арахисовая паста с мёдом">
+        </div>
+        <div class="card-body">
+          <div class="tag">Арахисовая паста</div>
+          <h3>С мёдом</h3>
+          <p>Арахисовая паста с мёдом 240 г.<br>
+          Состав: арахис обжаренный, мёд.<br>
+          Пищевая ценность (в 100 г): белки — 24 г; жиры — 50 г; углеводы — 13,4 г.<br>
+          Энергетическая ценность: 599,4 ккал / 2506,3 кДж.</p>
+        </div>
+      </div>
+
+      <!-- Шоколадная -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/araxis/choco.jpg" alt="Арахисовая паста Шоколадная">
+        </div>
+        <div class="card-body">
+          <div class="tag">Арахисовая паста</div>
+          <h3>Шоколадная</h3>
+          <p>Арахисовая паста «Шоколадная» 240 г.<br>
+          Состав: арахис обжаренный, шоколад чёрный (какао тёртое, какао-масло, сахар, ядро фундука, молоко сухое, эмульгатор — лецитин).<br>
+          Пищевая ценность (в 100 г): белки — 24,7 г; жиры — 56,8 г; углеводы — 17,2 г.<br>
+          Энергетическая ценность: 678,8 ккал / 2837,4 кДж.</p>
+        </div>
+      </div>
+
+      <!-- С сиропом топинамбура -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/araxis/topinambur.jpg" alt="Арахисовая паста с сиропом топинамбура">
+        </div>
+        <div class="card-body">
+          <div class="tag">Арахисовая паста</div>
+          <h3>С сиропом топинамбура</h3>
+          <p>Арахисовая паста с сиропом топинамбура 240 г.<br>
+          Состав: арахис обжаренный, сироп топинамбура.<br>
+          Энергетическая ценность: 270 ₽ (ознакомительно).</p>
+        </div>
+      </div>
+
+      <!-- Хрустящая -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/araxis/xrust.jpg" alt="Арахисовая паста Хрустящая">
+        </div>
+        <div class="card-body">
+          <div class="tag">Арахисовая паста</div>
+          <h3>Хрустящая</h3>
+          <p>Арахисовая паста с кусочками арахиса 240 г.<br>
+          Состав: арахис обжаренный, фруктоза.<br>
+          Пищевая ценность (в 100 г): белки — 24 г; жиры — 50 г; углеводы — 13,4 г.<br>
+          Энергетическая ценность: 599,4 ккал / 2506,3 кДж.</p>
+        </div>
+      </div>
+
+      <!-- На фруктозе -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/araxis/fruktoza.jpg" alt="Арахисовая паста на фруктозе">
+        </div>
+        <div class="card-body">
+          <div class="tag">Арахисовая паста</div>
+          <h3>На фруктозе</h3>
+          <p>Арахисовая паста с фруктозой 240 г.<br>
+          Состав: арахис обжаренный, фруктоза.<br>
+          Пищевая ценность (в 100 г): белки — 24 г; жиры — 50 г; углеводы — 13,4 г.<br>
+          Энергетическая ценность: 599,4 ккал / 2506,3 кДж.</p>
+        </div>
+      </div>
+
+      <!-- Десертная -->
+      <div class="card">
+        <div class="card-img">
+          <img src="cotolog/araxis/desert.jpg" alt="Арахисовая паста Десертная">
+        </div>
+        <div class="card-body">
+          <div class="tag">Арахисовая паста</div>
+          <h3>Десертная</h3>
+          <p>Арахисовая паста «Десертная» 240 г.<br>
+          Состав: арахис обжаренный, сахар.<br>
+          Пищевая ценность (в 100 г): белки — 23,6 г; жиры — 49,6 г; углеводы — 15,7 г.<br>
+          Энергетическая ценность: 603,6 ккал / 2523 кДж.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- HALVA -->
+<section id="halva" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-sub">Раздел каталога</div>
+      <h2>Халва</h2>
+    </div>
+
+    <div class="cards-3 mt-24">
+
+      <!-- Халва подсолнечная -->
+      <div class="card">
+        <div class="card-img">
+          <img src="/cotolog/xalva/podsol.jpg" alt="Халва подсолнечная">
+        </div>
+        <div class="card-body">
+          <div class="tag">Халва</div>
+          <h3>Подсолнечная</h3>
+          <p>Натуральная подсолнечная халва ручной работы.<br>
+          Масса — 250 г.</p>
+        </div>
+      </div>
+
+      <!-- Халва кунжутная -->
+      <div class="card">
+        <div class="card-img">
+          <img src="/cotolog/xalva/kunzhut.jpg" alt="Халва кунжутная">
+        </div>
+        <div class="card-body">
+          <div class="tag">Халва</div>
+          <h3>Кунжутная</h3>
+          <p>Классическая тахинная халва из обжаренного кунжута.<br>
+          Масса — 240 г.</p>
+        </div>
+      </div>
+
+      <!-- Халва арахисовая -->
+      <div class="card">
+        <div class="card-img">
+          <img src="/cotolog/xalva/arahis.jpg" alt="Халва арахисовая">
+        </div>
+        <div class="card-body">
+          <div class="tag">Халва</div>
+          <h3>Арахисовая</h3>
+          <p>Сливочная халва из обжаренного арахиса, делается вручную.<br>
+          Масса — 250 г.</p>
+        </div>
+      </div>
+
+      <!-- Халва фисташковая -->
+      <div class="card">
+        <div class="card-img">
+          <img src="/cotolog/xalva/fistashka.jpg" alt="Халва фисташковая">
+        </div>
+        <div class="card-body">
+          <div class="tag">Халва</div>
+          <h3>Фисташковая</h3>
+          <p>Элитная халва на фисташковой пасте.<br>
+          Масса — 240 г.</p>
+        </div>
+      </div>
+
+      <!-- Халва шоколадная -->
+      <div class="card">
+        <div class="card-img">
+          <img src="/cotolog/xalva/choco.jpg" alt="Халва шоколадная">
+        </div>
+        <div class="card-body">
+          <div class="tag">Халва</div>
+          <h3>Шоколадная</h3>
+          <p>Кунжутная халва с какао и нотками шоколада.<br>
+          Масса — 230 г.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <section id="about" class="section alt">
+  <div class="container grid-2 gap-24 center-v">
+    <div class="placeholder">
+      <img src="/logo/лого.png" alt="Фото кондитерской" />
+    </div>
+    <div>
+      <div class="section-head">
+        <div class="section-sub">Философия вкуса</div>
+        <h2>О нас</h2>
+      </div>
+      <p class="about-text mt-16">
+        «<b>Всё вкусное</b>» — уютная кондитерская мастерская, где каждый десерт создаётся вручную с любовью и вниманием к деталям.  
+        Мы верим, что сладости должны быть не просто вкусными, а вызывать эмоции.
+      </p>
+      <p class="about-text">
+        В нашем ассортименте вы найдёте:
+        <ul class="about-list">
+          <li>торты, десерты, пирожные, зефир и фланы;</li>
+          <li>натуральные урбечи, крем-халву и арахисовые пасты;</li>
+          <li><b>торты любой сложности</b> под заказ — свадебные, праздничные, тематические и корпоративные.</li>
+        </ul>
+      </p>
+      <p class="about-text">
+        Мы используем только <b>свежие и натуральные ингредиенты</b>, подбираем идеальные сочетания вкусов,  
+        чтобы каждый десерт стал маленьким праздником.  
+        Наши сладости готовятся небольшими партиями — с заботой, качеством и душевным теплом.
+      </p>
+
+      <div class="social mt-24">
+        <a href="https://vk.com/vsevkusnoetver" target="_blank" class="vk-link">
+          <img src="https://cdn-icons-png.flaticon.com/512/145/145813.png" alt="VK" class="vk-icon">
+          Мы ВКонтакте → <b>vk.com/vsevkusnoetver</b>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Contacts & Map -->
+  <section id="contacts" class="section">
+    <div class="container grid-2 gap-24">
+      <div>
+        <div class="section-head"><div class="section-sub">Где нас найти</div><h2>Адреса</h2></div>
+        <ul class="branch-list" id="branchList">
+        </ul>
+      </div>
+      <div class="map-card">
+        <div class="map-title" id="mapTitle">Выберите точку</div>
+        <iframe title="Карта" id="mapFrame" class="map-frame" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container row between center wrap">
+      <div class="row center gap-12">
+        <div class="logo small"><img src="/logo/лого.png" alt="Логотип Всё вкусное"></div>
+        <div class="f-meta">
+          <div class="f-title">Всё вкусное</div>
+          <div class="muted">© <span id="year"></span> Все права защищены</div>
+        </div>
+      </div>
+      <div class="muted">Ознакомительный сайт. Онлайн-заказ отключён.</div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+

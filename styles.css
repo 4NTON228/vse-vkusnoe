@@ -1,0 +1,368 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap');
+
+/* Рукописный шрифт для всех описаний карточек */
+.card-body p {
+  font-family: 'Dancing Script', cursive;
+  font-size: 13px; /* немного уменьшено */
+  color: #fce7d8;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* При наведении текст чуть подсвечивается */
+.card-body p:hover {
+  color: #fff3e6;
+  transform: scale(1.02);
+}
+
+
+/* Цветовая схема и переменные */
+:root {
+  --bg: #0f0b09;
+  --panel: #1c140f;
+  --panel-2: #1a120d;
+  --panel-3: #2a201b;
+  --text: #f7eadf;
+  --muted: rgba(247, 234, 223, .7);
+  --brand: #f1702f;
+  --brand-2: #f07e2d;
+  --accent: #ffb168;
+  --border: rgba(247, 234, 223, .15);
+  --border-2: rgba(247, 234, 223, .4);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;background:var(--bg);color:var(--text)}
+
+/* layout helpers */
+.container{max-width:1120px;margin-inline:auto;padding:0 16px}
+.row{display:flex;gap:8px}
+.row.center{align-items:center}
+.row.between{justify-content:space-between}
+.row.wrap{flex-wrap:wrap}
+.grid-2{display:grid;grid-template-columns:1fr}
+@media (min-width:860px){.grid-2{grid-template-columns:1fr 1fr}}
+.gap-12{gap:12px}.gap-24{gap:24px}
+.center-v{align-items:center}
+.mt-16{margin-top:16px}.mt-24{margin-top:24px}
+
+/* top bar */
+.topbar{background:#2a201b;color:var(--muted);font-size:14px}
+.topbar .container{padding:8px 16px}
+
+/* header */
+.header{position:sticky;top:0;z-index:40;background:#1c140fe6;backdrop-filter:saturate(1.2) blur(6px);border-bottom:1px solid var(--border)}
+.header .container{padding:12px 16px}
+
+/* logo block (div.logo внутри <img>) */
+.logo{width:80px;height:80px;border-radius:16px;background:var(--brand);padding:6px;box-shadow:0 2px 8px #0005;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.logo.small{width:60px;height:60px}
+.logo img{width:100%;height:100%;object-fit:contain;display:block}
+
+.brand-title{font-weight:800;letter-spacing:.3px;font-size:20px}
+.brand-sub{font-size:12px;color:var(--muted);margin-top:-2px}
+
+/* nav */
+.nav{display:none;gap:24px}
+.nav a{color:var(--text);text-decoration:none}
+.nav a:hover{color:var(--accent)}
+.burger{display:inline-flex;flex-direction:column;gap:4px;border:1px solid var(--border);padding:8px;border-radius:12px;background:transparent;color:var(--text)}
+.burger span{display:block;width:20px;height:2px;background:currentColor}
+.mobile-nav{display:none;border-top:1px solid var(--border);background:#1c140f}
+.mobile-nav a{display:block;padding:12px 16px;color:var(--text);text-decoration:none}
+.mobile-nav a:hover{color:var(--accent)}
+@media (min-width:860px){.nav{display:flex}.burger{display:none}}
+
+/* hero */
+.hero{position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(#20150d,#1a110c,#0f0b09)}
+.hero>.container{position:relative;padding:64px 16px}
+.hero-card{aspect-ratio:4/3;border-radius:24px;background:var(--panel-3);border:1px solid var(--border);box-shadow:0 10px 30px #0006;display:grid;place-items:center;text-align:center;padding:24px}
+.hero h1{font-size:34px;line-height:1.15;margin:0 0 8px;font-weight:900}
+@media (min-width:860px){.hero h1{font-size:56px}}
+.hero h1 span{display:block;color:var(--accent)}
+.lead{color:var(--muted);font-size:18px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:16px;font-weight:700;text-decoration:none;cursor:pointer}
+.btn.primary{background:var(--brand);color:#000}
+.btn.primary:hover{background:var(--brand-2)}
+.btn.outline{border:1px solid var(--border);color:var(--text)}
+.btn.outline:hover{border-color:var(--border-2)}
+
+/* sections */
+.section{padding:56px 0}
+.section.alt{background:var(--panel-2);border-block:1px solid var(--border)}
+.section-head .section-sub{color:var(--accent);letter-spacing:.2em;text-transform:uppercase;font-size:12px}
+.section-head h2{margin:6px 0 0;font-size:28px;font-weight:900}
+
+/* chips */
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.chip{display:inline-block;border:1px solid var(--border);padding:8px 12px;border-radius:999px;color:var(--text);text-decoration:none}
+.chip:hover{border-color:var(--border-2)}
+
+/* cards */
+.cards-3,.cards-5{display:grid;gap:16px}
+.cards-3{grid-template-columns:1fr}
+@media (min-width:640px){.cards-3{grid-template-columns:1fr 1fr}}
+@media (min-width:980px){.cards-3{grid-template-columns:1fr 1fr 1fr}}
+.cards-5{grid-template-columns:1fr 1fr}
+@media (min-width:980px){.cards-5{grid-template-columns:repeat(5,1fr)}}
+
+.card{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--border);border-radius:24px;overflow:hidden;color:inherit;text-decoration:none}
+.card-body{padding:16px;display:flex;flex-direction:column;gap:6px}
+.tag{font-size:12px;color:var(--muted)}
+
+/* изображение держит высоту; фото не тянет сетку */
+.card-img{position:relative;aspect-ratio:4/3;background:var(--panel-3);border-bottom:1px solid var(--border);overflow:hidden;display:flex;align-items:center;justify-content:center}
+.card-img.square{aspect-ratio:1/1}
+.card-img img{width:100%;height:100%;object-fit:cover;display:block}
+/* хочешь без обрезки — замени object-fit: contain */
+
+/* fallback для старых браузеров без aspect-ratio */
+@supports not (aspect-ratio: 1 / 1){
+  .card-img::before{content:"";display:block;padding-top:75%}
+  .card-img>img{position:absolute;inset:0}
+}
+
+/* placeholder для пустых/битых картинок */
+.img-placeholder{width:100%;height:100%;background:repeating-linear-gradient(45deg,#2a201b,#2a201b 10px,#231a15 10px,#231a15 20px)}
+
+/* about-image рамка */
+.placeholder{border-radius:24px;background:var(--panel-3);border:1px solid var(--border);aspect-ratio:4/3;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.placeholder img{max-width:100%;max-height:100%;object-fit:contain;display:block}
+
+/* контакты + карта */
+.branch-list{display:grid;gap:12px;margin-top:16px}
+.branch-item{display:grid;grid-template-columns:1fr auto;gap:12px;background:var(--panel);border:1px solid var(--border);border-radius:20px;padding:16px}
+.branch-meta .name{font-weight:700}
+.branch-meta .addr{color:var(--muted)}
+.branch-phone{margin-top:6px;display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border:1px solid var(--border);border-radius:999px;font-weight:700}
+.branch-phone a{color:inherit;text-decoration:none}
+.branch-actions{display:flex;flex-wrap:wrap;gap:8px;align-content:flex-start;justify-content:flex-end}
+.branch-actions a,.branch-actions button{font-size:13px;padding:8px 10px;border-radius:12px;border:1px solid var(--border);background:transparent;color:var(--text);text-decoration:none;cursor:pointer}
+.branch-actions a[href^="tel:"]::before{content:"📞 "}
+.branch-actions a[href*="wa.me"]::before{content:"💬 "}
+.branch-item.active{border-color:var(--border-2)}
+.branch-actions a:hover,.branch-actions button:hover{border-color:var(--border-2)}
+@media (max-width:860px){.branch-item{grid-template-columns:1fr}.branch-actions{justify-content:flex-start}}
+
+.map-card{background:var(--panel-3);border:1px solid var(--border);border-radius:24px;overflow:hidden}
+.map-title{padding:12px 12px 0;color:var(--muted)}
+.map-frame{width:100%;height:340px;border:0;margin-top:8px;border-top:1px solid var(--border)}
+@media (min-width:860px){.map-frame{height:100%}}
+
+/* footer */
+.footer{border-top:1px solid var(--border);padding:24px 0}
+.f-title{font-weight:800}
+.muted{color:var(--muted)}
+
+/* === Компактный вид адресов === */
+.branch-list.compact{ gap:10px; }
+.branch-list.compact .branch-item{
+  padding:12px;
+  border-radius:16px;
+  grid-template-columns: 1fr auto; /* текст слева, кнопки/телефон справа */
+  gap:10px;
+}
+.branch-list.compact .branch-meta .name{ font-size:14px; }
+.branch-list.compact .branch-meta .addr{ font-size:13px; color: var(--muted); }
+
+.branch-list.compact .branch-phone{
+  padding:4px 8px;
+  font-size:13px;
+  border-radius:999px;
+}
+
+.branch-list.compact .branch-actions{
+  display:flex; flex-wrap:wrap; gap:6px; justify-content:flex-end;
+}
+
+/* маленькие икон-кнопки */
+.branch-list.compact .branch-actions .icon{
+  padding:6px;
+  width:34px; height:34px; min-width:34px;
+  display:inline-flex; align-items:center; justify-content:center;
+  border:1px solid var(--border); border-radius:10px;
+  font-size:14px; line-height:1;
+  background:transparent; color:var(--text); text-decoration:none; cursor:pointer;
+}
+.branch-list.compact .branch-actions .icon:hover{ border-color:var(--border-2); }
+
+/* === Контакты: адреса в 2 колонки, аккуратные карточки, карта чуть шире === */
+
+/* Сетка секции: на десктопе карта шире списка адресов */
+#contacts .grid-2{ grid-template-columns: 1fr; }
+@media (min-width: 980px){
+  #contacts .grid-2{ grid-template-columns: 1fr 1.25fr; }
+}
+
+/* Список адресов: две колонки на десктопе */
+.branch-list.compact{
+  display:grid;
+  grid-template-columns: 1fr;   /* мобилки */
+  gap:12px;
+}
+@media (min-width: 980px){
+  .branch-list.compact{ grid-template-columns: 1fr 1fr; }  /* 2 столбца */
+}
+
+/* Карточка адреса — стабильная сетка 2×2 */
+.branch-list.compact .branch-item{
+  position:relative;
+  display:grid;
+  grid-template-columns: 1fr auto;                   /* слева текст, справа действия */
+  grid-template-areas: "name  phone" "addr  icons";  /* 2 строки */
+  align-items:center;
+  gap:8px 12px;
+  padding:14px;
+  min-height:92px;
+  border-radius:16px;
+  background:var(--panel);
+  border:1px solid var(--border);
+}
+.branch-list.compact .branch-item:hover{ border-color:var(--border-2); }
+.branch-list.compact .branch-item.active{
+  border-color:var(--accent);
+  box-shadow:0 0 0 2px color-mix(in oklab,var(--accent) 35%, transparent);
+}
+
+/* Левый столбец (название + адрес) */
+.branch-list.compact .branch-meta .name{ grid-area:name; font-weight:700; font-size:14px; }
+.branch-list.compact .branch-meta .addr{ grid-area:addr; font-size:13px; color:var(--muted); }
+
+/* Телефон-пилюля справа сверху */
+.branch-list.compact .branch-phone{
+  grid-area:phone;
+  justify-self:end;
+  padding:6px 10px;
+  font-size:13px;
+  border:1px solid var(--border);
+  border-radius:999px;
+  background:#00000014;
+  white-space:nowrap;
+}
+.branch-list.compact .branch-phone a{ color:inherit; text-decoration:none; }
+
+/* Иконки справа снизу */
+.branch-list.compact .branch-actions{ grid-area:icons; display:flex; gap:6px; justify-content:flex-end; flex-wrap:wrap; }
+
+/* Кнопки-иконки — круглые и одинаковые */
+.branch-list.compact .icon{
+  width:28px; height:28px; min-width:28px; padding:0;
+  display:inline-flex; align-items:center; justify-content:center;
+  border:1px solid var(--border); border-radius:50%;
+  font-size:14px; line-height:1; background:transparent; color:var(--text); cursor:pointer;
+}
+.branch-list.compact .icon:hover{ background:#ffffff12; border-color:var(--border-2); }
+.branch-list.compact .icon:active{ transform:translateY(1px); }
+
+/* Чтобы не дублировались эмодзи из старых правил ::before */
+.branch-list.compact .branch-actions a[href^="tel:"]::before,
+.branch-list.compact .branch-actions a[href*="wa.me"]::before{ content:none; }
+
+/* Узкие экраны — всё в один столбец */
+@media (max-width: 640px){
+  .branch-list.compact .branch-item{ grid-template-columns:1fr; grid-template-areas:"name" "phone" "addr" "icons"; }
+  .branch-list.compact .branch-phone{ justify-self:start; }
+  .branch-list.compact .branch-actions{ justify-content:flex-start; }
+}
+/* === Глобальный задний фон: мягкая текстура + виньетка === */
+
+/* === Задний фон: текстура + мягкая виньетка === */
+:root{
+  --bg-texture: url("cotolog/fon.png"); /* путь без первого "/" */
+}
+
+html{ background-color: var(--bg); }
+body{ background: transparent; position: relative; }
+
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  background:
+    radial-gradient(1200px 600px at 50% -200px, rgba(240,122,27,0.10) 0%, rgba(0,0,0,0) 60%),
+    var(--bg-texture);
+  background-repeat:no-repeat,repeat;
+  background-size:auto,320px 320px;
+  opacity:.22;
+  filter:saturate(.9) contrast(1.02);
+}
+
+.product-card{
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:24px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  padding:16px;
+  color:var(--text);
+  text-decoration:none;
+}
+.product-card h3{margin:4px 0;font-size:18px}
+.product-card p{font-size:14px;color:var(--muted)}
+.product-card span{margin-top:auto;color:var(--accent);font-weight:700}
+
+.about-text {
+  font-family: 'Dancing Script', cursive;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #f0e1d1;
+  margin-bottom: 1rem;
+}
+
+.about-list {
+  margin-top: 0.5rem;
+  margin-left: 1.2rem;
+  font-family: 'Dancing Script', cursive;
+  font-size: 0.95rem;
+  color: #f0e1d1;
+  list-style-type: "🍰 ";
+}
+
+.vk-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.1rem;
+  color: #f7c08a;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.vk-link:hover {
+  color: #ffdfb0;
+  text-shadow: 0 0 6px rgba(255, 196, 109, 0.7);
+}
+
+.vk-icon {
+  width: 22px;
+  height: 22px;
+  filter: brightness(1.2);
+}
+.logo {
+  width: 95px;              
+  height: 95px;
+  border-radius: 50%;       
+  overflow: hidden;         
+  background: var(--brand); 
+  padding: 6px;
+  box-shadow: 0 2px 8px #0005;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  transform: scale(1.3);
+}
+
+
+
