@@ -4,7 +4,7 @@
 /* Рукописный шрифт для всех описаний карточек */
 .card-body p {
   font-family: 'Dancing Script', cursive;
-  font-size: 13px; /* немного уменьшено */
+  font-size: 15px; /* немного уменьшено */
   color: #fce7d8;
   line-height: 1.5;
   letter-spacing: 0.2px;
