@@ -364,5 +364,13 @@ body::before{
   transform: scale(1.3);
 }
 
+@media (max-width: 768px) {
+    .cards-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* ровно 2 карточки в ряд */
+        gap: 16px; /* расстояние между карточками */
+    }
+}
+
 
 
